@@ -129,8 +129,9 @@ public class CalcAWT extends WindowAdapter implements ActionListener {
    }
 
 //    Когда окно закрывается - ресурсы, занимаемые им, освобождаются
-    public void closingWindow(WindowEvent e){
-        calcFrame.dispose();
+    
+    public void windowClosing(WindowEvent e){
+        System.exit(0);
     }
 
     public void actionPerformed(ActionEvent e){
